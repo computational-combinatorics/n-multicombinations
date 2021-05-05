@@ -4,12 +4,17 @@
 Set n-multicombinations for JavaScript.
 See [docs](https://computational-combinatorics.github.io/n-multicombinations/index.html).
 
-> :building_construction: Caveat emptor! This is work in progress. Code may be
-> working. Documentation may be present. Coherence may be. Maybe.
-
 > :warning: Depending on your environment, the code may require
 > `regeneratorRuntime` to be defined, for instance by importing
 > [regenerator-runtime/runtime](https://www.npmjs.com/package/regenerator-runtime).
+
+```
+import {multicombinations} from '@combinatorics/n-multicombinations';
+multicombinations("ABC", 1); // A B C
+
+import {range} from '@iterable-iterator/range';
+multicombinations(range(3), 2); // 00 01 02 11 12 22
+```
 
 [![License](https://img.shields.io/github/license/computational-combinatorics/n-multicombinations.svg)](https://raw.githubusercontent.com/computational-combinatorics/n-multicombinations/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@combinatorics/n-multicombinations.svg)](https://www.npmjs.org/package/@combinatorics/n-multicombinations)
