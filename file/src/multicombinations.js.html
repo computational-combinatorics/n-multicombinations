@@ -30,14 +30,16 @@
   <ul>
     
   <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-multicombinations">multicombinations</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-multicombinations">multicombinations</a></span></span></li>
 </ul>
 </div>
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/multicombinations.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import {list} from &apos;@iterable-iterator/list&apos;;
-import {pick} from &apos;@iterable-iterator/map&apos;;
-import {nrepeat} from &apos;@iterable-iterator/repeat&apos;;
+import {map, pick} from &apos;@iterable-iterator/map&apos;;
+
+import _multicombinations from &apos;./_multicombinations.js&apos;;
 
 /**
  * Yields all combinations, with repetitions, of each possible choice of
@@ -55,43 +57,15 @@ import {nrepeat} from &apos;@iterable-iterator/repeat&apos;;
  * @param {number} r - The size of the combinations to generate.
  * @returns {IterableIterator}
  */
-export default function* multicombinations(iterable, r) {
+const multicombinations = (iterable, r) =&gt; {
 	const pool = list(iterable);
-	const length = pool.length;
+	return map(
+		(indices) =&gt; list(pick(pool, indices)),
+		_multicombinations(pool.length, r),
+	);
+};
 
-	if (length === 0 &amp;&amp; r &gt; 0) {
-		return;
-	}
-
-	const indices = list(nrepeat(0, r));
-
-	yield list(pick(pool, indices));
-
-	while (true) {
-		let i = r - 1;
-
-		// eslint-disable-next-line no-constant-condition
-		while (true) {
-			if (i &lt; 0) {
-				return;
-			}
-
-			if (indices[i] !== length - 1) {
-				const pivot = ++indices[i];
-
-				for (++i; i &lt; r; ++i) {
-					indices[i] = pivot;
-				}
-
-				break;
-			}
-
-			--i;
-		}
-
-		yield list(pick(pool, indices));
-	}
-}
+export default multicombinations;
 </code></pre>
 
 </div>

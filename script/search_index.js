@@ -1,5 +1,11 @@
 window.esdocSearchIndex = [
   [
+    "@combinatorics/n-multicombinations/src/_multicombinations.js~multicombinations",
+    "function/index.html#static-function-multicombinations",
+    "<span>multicombinations</span> <span class=\"search-result-import-path\">@combinatorics/n-multicombinations/src/_multicombinations.js</span>",
+    "function"
+  ],
+  [
     "@combinatorics/n-multicombinations/src/multicombinations.js~multicombinations",
     "function/index.html#static-function-multicombinations",
     "<span>multicombinations</span> <span class=\"search-result-import-path\">@combinatorics/n-multicombinations/src/multicombinations.js</span>",
@@ -286,6 +292,12 @@ window.esdocSearchIndex = [
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
     "src/.external-ecmascript.js~undefined",
     "external"
+  ],
+  [
+    "src/_multicombinations.js",
+    "file/src/_multicombinations.js.html",
+    "src/_multicombinations.js",
+    "file"
   ],
   [
     "src/index.js",
