@@ -8,7 +8,7 @@ See [docs](https://computational-combinatorics.github.io/n-multicombinations/ind
 > `regeneratorRuntime` to be defined, for instance by importing
 > [regenerator-runtime/runtime](https://www.npmjs.com/package/regenerator-runtime).
 
-```
+```js
 import {multicombinations} from '@combinatorics/n-multicombinations';
 multicombinations("ABC", 1); // A B C
 
