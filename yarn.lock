@@ -1957,10 +1957,10 @@
   resolved "https://registry.yarnpkg.com/@iterable-iterator/range/-/range-1.0.0.tgz#5b3255710e3e0d174a82e38024dc2af3c1aeee25"
   integrity sha512-rFgziHtzWs/Zl1c5SfkAbUZzXvqvyeMtjsrwdkvXFQ1FCCXmzFjaMOKpr++wFuoV83XzZuiJ6lyHNEd3CSIyTg==
 
-"@iterable-iterator/repeat@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@iterable-iterator/repeat/-/repeat-0.0.1.tgz#3475728b7feb093624a04f6e7abd4103f10c30c0"
-  integrity sha512-WNuPt8H+p70TPG/CntJDcCHBPiYUA1SOVE/V45C0a9T/hr0ThRvn/Q+5diDaU3U3iJUH/Tqua+7S6ad0mS5Dzw==
+"@iterable-iterator/repeat@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@iterable-iterator/repeat/-/repeat-1.0.0.tgz#5ac94b179ce2abaaa7365d5e25af1f3ca8089e4a"
+  integrity sha512-Dbm6uKFTyrnn1FUM2451m9FQG9YBpHabSP4gRnvygO+jqqiuLpPDEf6s/4eambTC9loRq14Dp3PG4nFXMOalKA==
 
 "@js-library/commitlint-config@0.0.4":
   version "0.0.4"
