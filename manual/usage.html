@@ -64,12 +64,12 @@
 <a href="https://www.npmjs.com/package/regenerator-runtime">regenerator-runtime/runtime</a>.</p>
 </blockquote>
 <p>First, require the polyfill at the entry point of your application</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">require( &apos;regenerator-runtime/runtime&apos; ) ;
+<pre><code class="lang-js"><code class="source-code prettyprint">await import( &apos;regenerator-runtime/runtime.js&apos; ) ;
 // or
 import &apos;regenerator-runtime/runtime.js&apos; ;</code>
 </code></pre>
 <p>Then, import the library where needed</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">const nMulticombinations = require( &apos;@combinatorics/n-multicombinations&apos; ) ;
+<pre><code class="lang-js"><code class="source-code prettyprint">const nMulticombinations = await import( &apos;@combinatorics/n-multicombinations&apos; ) ;
 // or
 import * as nMulticombinations from &apos;@combinatorics/n-multicombinations&apos; ;</code>
 </code></pre>
