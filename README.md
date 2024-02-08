@@ -18,7 +18,7 @@ multicombinations(range(3), 2); // 00 01 02 11 12 22
 
 [![License](https://img.shields.io/github/license/computational-combinatorics/n-multicombinations.svg)](https://raw.githubusercontent.com/computational-combinatorics/n-multicombinations/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@combinatorics/n-multicombinations.svg)](https://www.npmjs.org/package/@combinatorics/n-multicombinations)
-[![Tests](https://img.shields.io/github/workflow/status/computational-combinatorics/n-multicombinations/ci?event=push&label=tests)](https://github.com/computational-combinatorics/n-multicombinations/actions/workflows/ci.yml?query=branch:main)
+[![Tests](https://img.shields.io/github/actions/workflow/status/computational-combinatorics/n-multicombinations/ci.yml?branch=main&event=push&label=tests)](https://github.com/computational-combinatorics/n-multicombinations/actions/workflows/ci.yml?query=branch:main)
 [![Dependencies](https://img.shields.io/librariesio/github/computational-combinatorics/n-multicombinations.svg)](https://github.com/computational-combinatorics/n-multicombinations/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/computational-combinatorics/n-multicombinations.svg)](https://github.com/computational-combinatorics/n-multicombinations/issues)
 [![Downloads](https://img.shields.io/npm/dm/@combinatorics/n-multicombinations.svg)](https://www.npmjs.org/package/@combinatorics/n-multicombinations)
