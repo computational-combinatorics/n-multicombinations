@@ -8,7 +8,7 @@ import {nrepeat} from '@iterable-iterator/repeat';
  * @param {number} r
  * @returns {IterableIterator<number[]>}
  */
-export default function* multicombinations(n, r) {
+export default function* _multicombinations(n, r) {
 	if (n === 0 && r > 0) return;
 
 	const indices = list(nrepeat(0, r));
